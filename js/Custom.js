@@ -65,6 +65,16 @@ $(document).ready(function () {
     },
   });
 
+  $(".servicesSlider").hover(
+    function () {
+      this.swiper.autoplay.stop();
+    },
+    function () {
+      this.swiper.autoplay.start();
+    }
+  );
+
+
   //Categories Slider
   var referencesSlider = new Swiper(".referencesSlider", {
     navigation: {
@@ -113,6 +123,16 @@ $(document).ready(function () {
     },
   });
 
+  $(".cvSlider").hover(
+    function () {
+      this.swiper.autoplay.stop();
+    },
+    function () {
+      this.swiper.autoplay.start();
+    }
+  );
+
+
   // workerCvSlider
   var workerCvSlider = new Swiper(".workerCvSlider", {
     spaceBetween: 0,
@@ -131,6 +151,17 @@ $(document).ready(function () {
       prevEl: ".workerCvSliderPrev",
     },
   });
+
+  $(".workerCvSlider").hover(
+    function () {
+      this.swiper.autoplay.stop();
+    },
+    function () {
+      this.swiper.autoplay.start();
+    }
+  );
+
+
 
   // // wow delay
   // function addWowDelay() {

@@ -1226,6 +1226,7 @@ span.select2.select2-container.select2-container--default {
   padding-bottom: 40px;
 }
 .services .service {
+  display: block;
   width: 100%;
   height: 300px;
   position: relative;
@@ -1274,7 +1275,8 @@ span.select2.select2-container.select2-container--default {
   margin: 10px 0 0;
   font-size: 13px;
   opacity: 0;
-  min-height: 50px;
+  visibility: hidden;
+  min-height: 60px;
   transition: all 0.3s ease-in-out;
 }
 .services .service:hover .details {
@@ -1282,6 +1284,7 @@ span.select2.select2-container.select2-container--default {
 }
 .services .service:hover .details p {
   opacity: 1;
+  visibility: visible;
 }
 
 .steps {
@@ -1931,6 +1934,24 @@ span.select2.select2-container.select2-container--default {
 .cvModal .workerCvSlider .swiper-button-next::before {
   font-weight: 300;
   font-size: 20px;
+}
+.cvModal .workerCvSlider .workerVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  color: #777;
+}
+.cvModal .workerCvSlider .workerVideo i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.cvModal .workerCvSlider iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
 }
 .cvModal ul {
   list-style: none;
