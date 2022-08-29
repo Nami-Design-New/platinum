@@ -476,7 +476,7 @@ span.select2.select2-container.select2-container--default {
         margin-bottom: 5px;
         color: #fff;
         padding: 5px 0;
-        transition: padding 0.3s;
+        transition: $transition;
         &:first-of-type,
         &:not(.visible) + .visible {
           margin-top: auto;
@@ -492,6 +492,9 @@ span.select2.select2-container.select2-container--default {
             font-size: 22px;
             padding-right: 8px;
             padding-left: 8px;
+            i{
+              font-size: 20px !important;
+            }
           }
         }
       }

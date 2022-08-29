@@ -495,7 +495,7 @@ span.select2.select2-container.select2-container--default {
   margin-bottom: 5px;
   color: #fff;
   padding: 5px 0;
-  transition: padding 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .navbar .sideMenu .sideMenuInner .sideMenuLink:first-of-type, .navbar .sideMenu .sideMenuInner .sideMenuLink:not(.visible) + .visible {
   margin-top: auto;
@@ -512,6 +512,9 @@ span.select2.select2-container.select2-container--default {
   font-size: 22px;
   padding-right: 8px;
   padding-left: 8px;
+}
+.navbar .sideMenu .sideMenuInner .sideMenuSocials li a i {
+  font-size: 20px !important;
 }
 .navbar .dropdown {
   text-align: center;
