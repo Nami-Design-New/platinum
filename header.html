@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.svg" />
+    </a>
+    <!-- links in md media -->
+    <div class="d-none d-lg-block">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"> الرئيسية </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html"> خدمتنا </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="countries.html"> دول الاستقدام </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="steps.html"> خطوات الاستقدام </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact_us.html"> تواصل معنا </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html"> حسابي </a>
+        </li>
+        <li class="nav-item">
+          <a class=" ms-2 nav-link customBTn2" href="all-workers.html"> <span class="py-0"> طلب استقدام </span> </a>
+        </li>
+        <li class="nav-item ">
+          <a class=" ms-2  nav-link customBTnOutline" href="login.html"> <span class="py-0"> تسجيل دخول </span> </a>
+        </li>
+      </ul>
+    </div>
+    <!-- toggle btn -->
+    <div class="sideBtn d-lg-none">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- side menu -->
+    <div class="sideMenu">
+      <div class="sideMenuInner">
+        <a class="sideMenuLink" href="index.html"> الرئيسية </a>
+        <a class="sideMenuLink" href="services.html"> خدمتنا </a>
+        <a class="sideMenuLink" href="countries.html"> دول الاستقدام </a>
+        <a class="sideMenuLink" href="steps.html"> خطوات الاستقدام </a>
+        <a class="sideMenuLink" href="contact_us.html"> تواصل معنا </a>
+        <a class="sideMenuLink" href="profile.html"> حسابي </a>
+        <a class="sideMenuLink customBTn2" href="all-workers.html"> طلب استقدام </a>
+        <a class="sideMenuLink btn customBTnOutline" href="login.html"> تسجيل دخول </a>
+        <ul class="sideMenuSocials">
+          <li>
+            <a href="#!" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  // side menu
+  $(".sideBtn").click(function () {
+    $(this).toggleClass("active");
+    $(".sideMenu").toggleClass("active");
+  });
+</script>
