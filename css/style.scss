@@ -893,7 +893,7 @@ span.select2.select2-container.select2-container--default {
         content: "";
         width: 100%;
         height: 100%;
-        background: linear-gradient(#1d71b830, #1d71b8c2);
+        background: linear-gradient(#005ca930, #005ca9c2);
         position: absolute;
         bottom: 0;
         right: 0;
@@ -1926,7 +1926,7 @@ span.select2.select2-container.select2-container--default {
   padding: 70px 0 50px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(45deg, #00b8de10, #1d71b820);
+  background: linear-gradient(45deg, #00b8de10, #00b8de20);
   .single {
     position: relative;
     display: flex;
@@ -1940,7 +1940,7 @@ span.select2.select2-container.select2-container--default {
         width: 100%;
         height: 400px;
         object-fit: cover;
-        border-radius: 16px;
+        border-radius: 4px;
         position: relative;
         z-index: 2;
         // border: 1px solid $secondColor;
@@ -1953,9 +1953,9 @@ span.select2.select2-container.select2-container--default {
         right: -20px;
         bottom: -20px;
         z-index: 1;
-        border: 2px solid $gold;
-        background-color: #ffd70030;
-        border-radius: 16px;
+        border: 2px solid $secondColor;
+        background-color: #00b8de30;
+        border-radius: 4px;
         // transform: rotate(45deg);
         // animation: bounceIn 3s infinite ease-in-out both;
       }
