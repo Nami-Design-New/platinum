@@ -2720,87 +2720,6 @@ span.select2.select2-container.select2-container--default {
   font-weight: bold;
 }
 
-.routeNav {
-  display: flex;
-  align-items: center;
-  background-color: #005ca9;
-  border-radius: 8px;
-  padding: 10px 30px;
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-}
-.routeNav .Back {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  color: #005ca9;
-  border-radius: 100%;
-  margin-left: 30px;
-  transition: all 0.3s ease-in-out;
-  font-size: 20px;
-  border: none;
-}
-.routeNav .Back:hover {
-  background-color: #292929;
-  color: #ffd700;
-}
-.routeNav .Back .fa-angle-right:before {
-  content: "\f105";
-}
-.routeNav ul {
-  margin: 0;
-  list-style: none;
-  transition: all 0.3s ease-in-out;
-  padding: 0;
-}
-.routeNav ul li {
-  display: inline-flex;
-  padding: 10px;
-  color: #ffffff;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-}
-.routeNav ul li a {
-  transition: all 0.3s ease-in-out;
-  color: #00b8de;
-}
-.routeNav ul li a:hover {
-  color: #ffffff;
-}
-.routeNav ul li a.active {
-  color: #ffffff;
-  cursor: default;
-  font-weight: bold;
-}
-.routeNav ul li::after {
-  content: " / ";
-  font-size: 20px;
-  font-weight: bold;
-  position: absolute;
-  left: -3px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.routeNav ul li:last-child:after {
-  display: none;
-}
-@media (max-width: 768px) {
-  .routeNav {
-    margin: 0px 0px 30px;
-    padding: 10px 10px;
-  }
-  .routeNav .Back {
-    margin-left: 20px;
-  }
-  .routeNav ul li a {
-    font-size: 16px;
-  }
-}
-
 .status {
   position: relative;
   padding: 20px 10px;
@@ -2942,6 +2861,218 @@ span.select2.select2-container.select2-container--default {
 .countries .country p {
   color: #777;
   margin-bottom: 20px;
+}
+
+.routeNav {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.routeNav .Back {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #00b8de;
+  color: #ffffff;
+  border-radius: 100%;
+  margin-left: 30px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  border: none;
+}
+.routeNav .Back:hover {
+  background-color: #005ca9;
+  color: #ffd700;
+}
+.routeNav .Back .fa-angle-right:before {
+  content: "\f105";
+}
+.routeNav ul {
+  margin: 0;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+}
+.routeNav ul li {
+  display: inline-flex;
+  padding: 10px;
+  color: #292929;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.routeNav ul li a {
+  transition: all 0.3s ease-in-out;
+  color: #005ca9;
+}
+.routeNav ul li a:hover {
+  color: #292929;
+}
+.routeNav ul li a.active {
+  color: #292929;
+  cursor: default;
+  font-weight: bold;
+}
+.routeNav ul li::after {
+  content: " / ";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.routeNav ul li:last-child:after {
+  display: none;
+}
+@media (max-width: 768px) {
+  .routeNav {
+    margin: 0px 0px 30px;
+    padding: 10px 10px;
+  }
+  .routeNav .Back {
+    margin-left: 20px;
+  }
+  .routeNav ul li a {
+    font-size: 16px;
+  }
+}
+
+.workerDetails {
+  padding: 50px 0;
+}
+.workerDetails .personalInfo {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1254901961);
+  margin-bottom: 40px;
+  display: block;
+}
+.workerDetails .personalInfo .workerImg {
+  background-color: #cdebea;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.workerDetails .personalInfo .workerImg img {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.workerDetails .personalInfo .workerImg .workerVideo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 92, 169, 0.1882352941);
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  color: #005ca9;
+}
+.workerDetails .personalInfo .workerImg .workerVideo i {
+  font-size: 50px;
+}
+.workerDetails .personalInfo .workerImg .workerVideo a {
+  display: block;
+  font-weight: bold;
+}
+.workerDetails .table tr {
+  border: none;
+  padding-bottom: 10px;
+}
+.workerDetails .table tr td {
+  padding: 15px 12px;
+  border: none;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: rgba(0, 92, 169, 0.062745098);
+}
+.workerDetails .table tr td:first-child {
+  width: 110px;
+  font-size: 13px !important;
+  font-weight: normal;
+}
+.workerDetails .table tr:first-child td:first-child {
+  border-top-right-radius: 16px;
+}
+.workerDetails .table tr:first-child td:last-child {
+  border-top-left-radius: 16px;
+}
+.workerDetails .table tr:last-child td:first-child {
+  border-bottom-right-radius: 16px;
+}
+.workerDetails .table tr:last-child td:last-child {
+  border-bottom-left-radius: 16px;
+}
+.workerDetails .more {
+  margin-bottom: 40px;
+}
+.workerDetails .more .moreTilte {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 22px !important;
+  color: #005ca9;
+}
+
+.allWorkers .workerDetails .personalInfo {
+  display: flex;
+  box-shadow: none;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 0;
+  border-bottom: 2px dashed #eee;
+  margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+  .allWorkers .workerDetails .personalInfo {
+    flex-direction: column;
+  }
+}
+.allWorkers .workerDetails .personalInfo img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background-color: #cdebea;
+  border: 3px solid #eee;
+  margin-left: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 400px) {
+  .allWorkers .workerDetails .personalInfo img {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+.allWorkers .workerDetails .personalInfo .table {
+  text-align: start;
+  margin-bottom: 0;
+}
+.allWorkers .workerDetails .personalInfo .table tr {
+  min-width: 33%;
+  display: inline-block;
+  padding-bottom: 0;
+  height: 100%;
+}
+.allWorkers .workerDetails .personalInfo .table td {
+  border-radius: 0 !important;
+  background: none;
+  width: unset !important;
+}
+.allWorkers .workerDetails .personalInfo .table td:first-child {
+  color: #777;
 }
 
 /* PC device :991px. */
