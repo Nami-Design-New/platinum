@@ -10,6 +10,9 @@
   padding: 0;
   outline: none;
   direction: rtl;
+  -webkit-print-color-adjust: exact;
+     color-adjust: exact;
+          print-color-adjust: exact;
 }
 
 ::-webkit-scrollbar {
@@ -354,6 +357,11 @@ span.select2.select2-container.select2-container--default {
   left: 0;
   width: 100%;
   z-index: 1024;
+}
+@media print {
+  .navbar {
+    display: none !important;
+  }
 }
 .navbar .navbar-nav {
   align-items: center;
@@ -710,6 +718,11 @@ span.select2.select2-container.select2-container--default {
   padding: 20px 0;
   position: relative;
   z-index: 2;
+}
+@media print {
+  .footer {
+    display: none !important;
+  }
 }
 .footer .info {
   display: flex;
@@ -2870,6 +2883,11 @@ span.select2.select2-container.select2-container--default {
   margin-bottom: 40px;
   transition: all 0.3s ease-in-out;
 }
+@media print {
+  .routeNav {
+    display: none !important;
+  }
+}
 .routeNav .Back {
   position: relative;
   display: flex;
@@ -2952,6 +2970,11 @@ span.select2.select2-container.select2-container--default {
   margin-bottom: 40px;
   display: block;
 }
+@media print {
+  .workerDetails .personalInfo {
+    box-shadow: none;
+  }
+}
 .workerDetails .personalInfo .workerImg {
   background-color: #cdebea;
   border-radius: 16px;
@@ -2978,6 +3001,11 @@ span.select2.select2-container.select2-container--default {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   color: #005ca9;
+}
+@media print {
+  .workerDetails .personalInfo .workerImg .workerVideo {
+    display: none;
+  }
 }
 .workerDetails .personalInfo .workerImg .workerVideo i {
   font-size: 50px;
@@ -3022,6 +3050,14 @@ span.select2.select2-container.select2-container--default {
   margin-bottom: 20px;
   font-size: 22px !important;
   color: #005ca9;
+}
+@media print {
+  .workerDetails {
+    padding: 0;
+  }
+  .workerDetails .printBtn {
+    display: none;
+  }
 }
 
 .allWorkers .workerDetails .personalInfo {
@@ -3075,6 +3111,17 @@ span.select2.select2-container.select2-container--default {
   color: #777;
 }
 
+@media print {
+  @page {
+    size: a3;
+  }
+  body {
+    min-width: 992px !important;
+  }
+  .container {
+    min-width: 992px !important;
+  }
+}
 /* PC device :991px. */
 @media (min-width: 991px) {
   body {

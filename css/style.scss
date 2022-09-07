@@ -18,6 +18,7 @@ $BigShadow: 0px 8px 24px #00000020;
   padding: 0;
   outline: none;
   direction: rtl;
+  print-color-adjust: exact ;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -326,6 +327,10 @@ span.select2.select2-container.select2-container--default {
   border-radius: 16px;
 }
 .navbar {
+  @media print {
+    display: none !important;
+  }
+
   background: #ffffff;
   border-top: 1px solid #ffffff33;
   border-bottom: 1px solid #ffffff33;
@@ -672,6 +677,9 @@ span.select2.select2-container.select2-container--default {
   }
 }
 .footer {
+  @media print {
+    display: none !important;
+  }
   background-color: #efeff7;
   background-size: cover;
   padding: 20px 0;
@@ -2789,6 +2797,10 @@ span.select2.select2-container.select2-container--default {
   border-radius: 8px;
   margin-bottom: 40px;
   transition: $transition;
+
+  @media print {
+    display: none !important;
+  }
   .Back {
     position: relative;
     display: flex;
@@ -2872,7 +2884,9 @@ span.select2.select2-container.select2-container--default {
     box-shadow: $BigShadow;
     margin-bottom: 40px;
     display: block;
-
+    @media print {
+      box-shadow: none;
+    }
     .workerImg {
       background-color: #cdebea;
       border-radius: 16px;
@@ -2895,7 +2909,9 @@ span.select2.select2-container.select2-container--default {
         background-color: #005ca930;
         border-radius: 16px;
         backdrop-filter: blur(4px);
-
+        @media print {
+          display: none;
+        }
         color: $mainColor;
         i {
           font-size: 50px;
@@ -2909,6 +2925,7 @@ span.select2.select2-container.select2-container--default {
   }
 
   .table {
+   
     tr {
       border: none;
       padding-bottom: 10px;
@@ -2959,6 +2976,13 @@ span.select2.select2-container.select2-container--default {
       color: $mainColor;
     }
   }
+
+  @media print {
+    padding: 0;
+    .printBtn{
+      display: none;
+    }
+  }
 }
 
 .allWorkers {
@@ -2987,7 +3011,6 @@ span.select2.select2-container.select2-container--default {
         @media (max-width: 400px) {
           margin-left: 0px;
           margin-bottom: 20px;
-
         }
       }
       .table {
@@ -3010,6 +3033,23 @@ span.select2.select2-container.select2-container--default {
       }
     }
   }
+}
+
+
+
+
+
+@media print {
+  @page {
+    size: a3;
+  }
+  body {
+    min-width: 992px !important;
+  }
+  .container {
+    min-width: 992px !important;
+  }
+
 }
 
 // //////////////////////////////////////////==================
