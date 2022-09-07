@@ -2942,6 +2942,10 @@ span.select2.select2-container.select2-container--default {
           font-size: 13px !important;
           font-weight: normal;
         }
+        &:last-child {
+          padding-right: 4px;
+          padding-left: 15px;
+        }
       }
 
       &:first-child {
@@ -2995,8 +2999,8 @@ span.select2.select2-container.select2-container--default {
       justify-content: center;
       padding: 10px;
       margin-bottom: 0;
-      border-bottom: 2px dashed #eee;
       margin-bottom: 20px;
+      box-shadow: $shadow;
       @media (max-width: 400px) {
         flex-direction: column;
       }
@@ -3026,9 +3030,15 @@ span.select2.select2-container.select2-container--default {
           border-radius: 0 !important;
           background: none;
           width: unset !important;
+          padding: 10px 10px;
           &:first-child {
             color: #777;
           }
+          &:last-child {
+            padding-right: 4px;
+            padding-left: 15px;
+          }
+
         }
       }
     }

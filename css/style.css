@@ -3030,6 +3030,10 @@ span.select2.select2-container.select2-container--default {
   font-size: 13px !important;
   font-weight: normal;
 }
+.workerDetails .table tr td:last-child {
+  padding-right: 4px;
+  padding-left: 15px;
+}
 .workerDetails .table tr:first-child td:first-child {
   border-top-right-radius: 16px;
 }
@@ -3068,8 +3072,8 @@ span.select2.select2-container.select2-container--default {
   justify-content: center;
   padding: 10px;
   margin-bottom: 0;
-  border-bottom: 2px dashed #eee;
   margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1254901961);
 }
 @media (max-width: 400px) {
   .allWorkers .workerDetails .personalInfo {
@@ -3106,9 +3110,14 @@ span.select2.select2-container.select2-container--default {
   border-radius: 0 !important;
   background: none;
   width: unset !important;
+  padding: 10px 10px;
 }
 .allWorkers .workerDetails .personalInfo .table td:first-child {
   color: #777;
+}
+.allWorkers .workerDetails .personalInfo .table td:last-child {
+  padding-right: 4px;
+  padding-left: 15px;
 }
 
 @media print {
