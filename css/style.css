@@ -3253,6 +3253,8 @@ span.select2.select2-container.select2-container--default {
 
 .workerDetails {
   padding: 50px 0;
+  min-height: 100vh;
+  position: relative;
 }
 .workerDetails .personalInfo {
   padding: 16px;
@@ -3264,6 +3266,7 @@ span.select2.select2-container.select2-container--default {
 @media print {
   .workerDetails .personalInfo {
     box-shadow: none;
+    margin-bottom: 0px;
   }
 }
 .workerDetails .personalInfo .workerImg {
@@ -3305,37 +3308,69 @@ span.select2.select2-container.select2-container--default {
   display: block;
   font-weight: bold;
 }
-.workerDetails .table tr {
+.workerDetails .customTable tr {
   border: none;
   padding-bottom: 10px;
 }
-.workerDetails .table tr td {
+.workerDetails .customTable tr td {
   padding: 15px 12px;
   border: none;
   font-weight: bold;
   vertical-align: middle;
   background-color: rgba(0, 92, 169, 0.062745098);
 }
-.workerDetails .table tr td:first-child {
-  width: 110px;
+.workerDetails .customTable tr td:first-child {
+  width: 135px;
   font-size: 13px !important;
   font-weight: normal;
 }
-.workerDetails .table tr td:last-child {
+.workerDetails .customTable tr td:last-child {
   padding-right: 4px;
   padding-left: 15px;
 }
-.workerDetails .table tr:first-child td:first-child {
+.workerDetails .customTable tr:first-child td:first-child {
   border-top-right-radius: 16px;
 }
-.workerDetails .table tr:first-child td:last-child {
+.workerDetails .customTable tr:first-child td:last-child {
   border-top-left-radius: 16px;
 }
-.workerDetails .table tr:last-child td:first-child {
+.workerDetails .customTable tr:last-child td:first-child {
   border-bottom-right-radius: 16px;
 }
-.workerDetails .table tr:last-child td:last-child {
+.workerDetails .customTable tr:last-child td:last-child {
   border-bottom-left-radius: 16px;
+}
+.workerDetails .wideTable {
+  background-color: rgba(0, 92, 169, 0.062745098);
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+  border-radius: 16px;
+}
+.workerDetails .wideTable tr {
+  border-radius: 16px;
+}
+.workerDetails .wideTable tr td {
+  border: none;
+  padding: 16px 10px;
+}
+.workerDetails .wideTable tr th {
+  padding: 16px 10px;
+}
+.workerDetails .wideTable tr:first-child th:first-child {
+  border-top-right-radius: 16px;
+}
+.workerDetails .wideTable tr:first-child th:last-child {
+  border-top-left-radius: 16px;
+}
+.workerDetails .wideTable tr:last-child td:first-child {
+  border-bottom-right-radius: 16px;
+}
+.workerDetails .wideTable tr:last-child td:last-child {
+  border-bottom-left-radius: 16px;
+}
+.workerDetails .wideTable td {
+  background-color: rgba(0, 92, 169, 0.062745098);
 }
 .workerDetails .more {
   margin-bottom: 40px;
@@ -3345,6 +3380,18 @@ span.select2.select2-container.select2-container--default {
   margin-bottom: 20px;
   font-size: 22px !important;
   color: #005ca9;
+  position: relative;
+  padding-right: 20px;
+}
+.workerDetails .more .moreTilte::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: #005ca9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 10px 0 0 10px;
 }
 @media print {
   .workerDetails {
@@ -3353,6 +3400,41 @@ span.select2.select2-container.select2-container--default {
   .workerDetails .printBtn {
     display: none;
   }
+}
+.workerDetails .printFooter {
+  background-color: rgba(0, 92, 169, 0.1254901961);
+  position: absolute;
+  border-radius: 16px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #005ca9;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+  display: none;
+}
+@media print {
+  .workerDetails .printFooter {
+    display: flex;
+  }
+}
+.workerDetails .printFooter .contact {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.workerDetails .printFooter .contact i {
+  font-size: 24px;
+}
+.workerDetails .printFooter .logo {
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5px;
 }
 
 .allWorkers .workerDetails .personalInfo {

@@ -18,7 +18,7 @@ $BigShadow: 0px 8px 24px #00000020;
   padding: 0;
   outline: none;
   direction: rtl;
-  print-color-adjust: exact ;
+  print-color-adjust: exact;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -358,7 +358,7 @@ span.select2.select2-container.select2-container--default {
       }
     }
   }
-  .nav-item{
+  .nav-item {
     display: flex;
     align-items: center;
   }
@@ -1140,7 +1140,6 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
-
 .defaultBtn {
   position: relative;
   display: inline-block;
@@ -1421,7 +1420,6 @@ span.select2.select2-container.select2-container--default {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
-    
 
     @media (max-width: 768px) {
       width: 100%;
@@ -1482,7 +1480,6 @@ span.select2.select2-container.select2-container--default {
     }
   }
 }
-
 
 .steps {
   padding: 70px 0 30px;
@@ -1892,10 +1889,9 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
-
 .requirements {
   background: linear-gradient(45deg, #00b8de10, #1d71b820);
-  padding: 70px 0 ;
+  padding: 70px 0;
   .requirement {
     padding: 30px;
     border: 1px solid $secondColor;
@@ -3195,6 +3191,8 @@ span.select2.select2-container.select2-container--default {
 
 .workerDetails {
   padding: 50px 0;
+  min-height: 100vh;
+  position: relative;
   .personalInfo {
     padding: 16px;
     border-radius: 16px;
@@ -3203,6 +3201,7 @@ span.select2.select2-container.select2-container--default {
     display: block;
     @media print {
       box-shadow: none;
+      margin-bottom: 0px;
     }
     .workerImg {
       background-color: #cdebea;
@@ -3241,8 +3240,7 @@ span.select2.select2-container.select2-container--default {
     }
   }
 
-  .table {
-   
+  .customTable {
     tr {
       border: none;
       padding-bottom: 10px;
@@ -3255,7 +3253,7 @@ span.select2.select2-container.select2-container--default {
 
         background-color: #005ca910;
         &:first-child {
-          width: 110px;
+          width: 135px;
           font-size: 13px !important;
           font-weight: normal;
         }
@@ -3288,6 +3286,48 @@ span.select2.select2-container.select2-container--default {
     }
   }
 
+  .wideTable {
+    background-color: #005ca910;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+    border-radius: 16px;
+    tr {
+      border-radius: 16px;
+      td {
+        border: none;
+        padding: 16px 10px;
+      }
+      th {
+        padding: 16px 10px;
+      }
+
+      &:first-child {
+        th {
+          &:first-child {
+            border-top-right-radius: 16px;
+          }
+          &:last-child {
+            border-top-left-radius: 16px;
+          }
+        }
+      }
+      &:last-child {
+        td {
+          &:first-child {
+            border-bottom-right-radius: 16px;
+          }
+          &:last-child {
+            border-bottom-left-radius: 16px;
+          }
+        }
+      }
+    }
+    td {
+      background-color: #005ca910;
+    }
+  }
+
   .more {
     margin-bottom: 40px;
     .moreTilte {
@@ -3295,13 +3335,58 @@ span.select2.select2-container.select2-container--default {
       margin-bottom: 20px;
       font-size: 22px !important;
       color: $mainColor;
+      position: relative;
+      padding-right: 20px;
+      &::before {
+        content: "";
+        width: 10px;
+        height: 100%;
+        background-color: $mainColor;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 10px 0 0 10px;
+      }
     }
   }
 
   @media print {
     padding: 0;
-    .printBtn{
+    .printBtn {
       display: none;
+    }
+  }
+  .printFooter {
+    background-color: #005ca920;
+    position: absolute;
+    border-radius: 16px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: $mainColor;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    display: none;
+    @media print {
+      display: flex;
+    }
+    .contact {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+
+      i {
+        font-size: 24px;
+      }
+    }
+    .logo {
+      height: 70px;
+      object-fit: contain;
+      padding: 5px;
     }
   }
 }
@@ -3355,16 +3440,11 @@ span.select2.select2-container.select2-container--default {
             padding-right: 4px;
             padding-left: 15px;
           }
-
         }
       }
     }
   }
 }
-
-
-
-
 
 @media print {
   @page {
@@ -3376,7 +3456,6 @@ span.select2.select2-container.select2-container--default {
   .container {
     min-width: 992px !important;
   }
-
 }
 
 // //////////////////////////////////////////==================
